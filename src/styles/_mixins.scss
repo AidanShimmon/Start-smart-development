@@ -1,0 +1,16 @@
+@mixin layout {
+    display: grid;
+    grid-template-columns: $gutter__width repeat(12, 1fr) $gutter__width;
+}
+
+@mixin breakpoint-down($range) {
+    $sm: 540px;
+    $md: 720px;
+    $lg: 960px;
+    $xl: 1280px;
+    $xxl: 1960px;
+
+    @media (max-width: $range) {
+        @content;
+    }
+}

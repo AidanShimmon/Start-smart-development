@@ -1,0 +1,20 @@
+h1, h2, h3 {
+    font-family: $font__family__header;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: clamp(3rem, 7vmax, 5rem);
+
+    @include breakpoint-down(sm) {
+        font-size: 1.5rem;
+    }
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
