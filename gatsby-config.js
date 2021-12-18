@@ -14,7 +14,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sass`,
       options: {
-        additionalData: `@use 'variables' as *;`,
+        additionalData: `@use 'globals' as *;`,
         sassOptions: {
           includePaths: [`${__dirname}/src/styles`],
         }
