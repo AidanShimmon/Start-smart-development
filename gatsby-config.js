@@ -25,7 +25,7 @@ module.exports = {
       options: {
         fonts: [
           `Raleway\: 400,700`, 
-          `Sarabun\: 600,700`,
+          `Sarabun\: 600,700,800`,
         ],
         display: `swap`,
       },
@@ -34,7 +34,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `./src/assets/images/`,
+        path: `${__dirname}/src/assets/images/`,
       },
       __key: `images`,
     },

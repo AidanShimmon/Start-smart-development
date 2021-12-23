@@ -6,4 +6,8 @@
     color: $font__white;
     text-decoration: none;
     font-size: clamp(1rem, 1.5vmax, 1.5rem);
+
+    + .button {
+        margin-left: 1.5rem;
+    }
 }

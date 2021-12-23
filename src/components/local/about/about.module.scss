@@ -1,0 +1,16 @@
+.about {
+    @include contain--full;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 3rem 0;
+    align-items: center;
+
+    &__text {
+        padding-right: 25%;
+
+        h3 {
+            text-shadow: none;
+            line-height: 1;
+        }
+    }
+}

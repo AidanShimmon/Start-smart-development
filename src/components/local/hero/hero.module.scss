@@ -1,0 +1,27 @@
+.hero {
+    @include contain--full;
+    padding: 1rem 0 4rem 0;
+
+    &__top {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        align-items: flex-end;
+
+        &__text {
+            grid-column: 1/2;
+
+            p {
+                margin-bottom: 1.25rem;
+            }
+        }
+
+        &__img {
+            display: flex;
+            grid-column: 2/3;
+        }
+    }
+
+    &__buttons {
+        padding-top: 1rem;
+    }
+}

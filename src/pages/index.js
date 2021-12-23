@@ -1,11 +1,13 @@
 import React from "react"
-
 import Layout from "../components/global/layout/layout"
+import Hero from "../components/local/hero/hero"
+import About from "../components/local/about/about"
 
 
 const IndexPage = () => (
   <Layout>
-    <h1>Hello world!</h1>
+    <Hero />
+    <About />
   </Layout>
 )
 
