@@ -1,6 +1,21 @@
-@mixin layout {
+@mixin layout--outer {
     display: grid;
     grid-template-columns: $gutter__width repeat(12, 1fr) $gutter__width;
+    max-width: $max__width;
+    margin: 0 auto;
+}
+
+@mixin layout--inner {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+@mixin contain {
+    grid-column: 2/14;
+}
+
+@mixin contain--full {
+    grid-column: 1 / -1;
 }
 
 @mixin breakpoint-down($range) {
@@ -10,7 +25,15 @@
     $xl: 1280px;
     $xxl: 1960px;
 
-    @media (max-width: $range) {
-        @content;
+    @if $range == sm {
+        @media (max-width: $sm) { @content; }
+    } @else if $range == md {
+        @media (max-width: $md) { @content; }
+    } @else if $range == lg {
+        @media (max-width: $lg) { @content; }
+    } @else if $range == xl {
+        @media (max-width: $xl) { @content; }
+    } @else if $range == xxl {
+        @media (max-width: $xxl) { @content; }
     }
 }

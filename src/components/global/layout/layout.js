@@ -1,13 +1,14 @@
 import React from "react";
-
 import Header from "../header/header"
 import Footer from "../footer/footer"
 
+import * as styles from "./layout.module.scss"
+
 const Layout = ({ children }) => {
     return (
-        <div className="main">
+        <div className={styles.main}>
             <Header />
-            <main className="main__content">{children}</main>
+            <main className={styles.main__content}>{children}</main>
             <Footer />
         </div>
     )

@@ -1,0 +1,28 @@
+.header {
+    @include contain;
+    padding: 1.5rem 0;
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: $brand__alt;
+        padding: 0.75rem;
+        border-radius: $border__radius;
+
+        a {
+            color: $font__white;
+            font-size: clamp(1rem, 1.5vmax, 1.5rem);
+            text-decoration: none;
+            line-height: normal;
+
+            + a {
+                margin-left: 2.25rem;
+            }
+        }
+
+        &__logo {
+            display: flex;
+        }
+    } 
+}

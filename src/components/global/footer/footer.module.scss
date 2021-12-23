@@ -1,0 +1,34 @@
+.footer {
+    @include contain--full;
+    @include layout--outer;
+    background: $background__white;
+    width: 100%;
+    padding: 2rem 0;
+
+    &__content {
+        @include contain;
+
+        &__row {
+            display: grid;
+            grid-template-columns: repeat( 4, 1fr );
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-bottom: 4rem;
+        }   
+
+        &__column {
+            h3 {
+                text-shadow: none;
+            }
+
+            li {
+                padding: 0.5rem 0;
+
+                a {
+                    color: $font__main;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

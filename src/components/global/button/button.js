@@ -1,10 +1,12 @@
 import React from "react";
-import { Link } from 'gtaby'
+import { Link } from 'gatsby'
 
-const Button = ({text, link, className, id}) => {
+import * as styles from "./button.module.scss"
+
+const Button = ({text, link, id}) => {
     return (
         <Link
-            className={className}
+            className={styles.button}
             to={link}
             id={id}
         >
