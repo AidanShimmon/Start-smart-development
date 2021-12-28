@@ -1,0 +1,32 @@
+.services {
+    @include contain--full;
+    padding: 4rem 0;
+
+    h3 {
+        text-shadow: none;
+    }
+}
+
+.service {
+
+    h3 {
+        text-align: center;
+        line-height: 1.1;
+    }
+    
+    &__wrap {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 200px);
+        justify-content: space-between;
+        column-gap: 2rem;
+        padding-bottom: 4rem;
+    }
+
+    &__image {
+        display: flex;
+
+        svg {
+            display: flex;
+        }
+    }
+}
