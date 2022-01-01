@@ -3,6 +3,10 @@
 @import 'mixins';
 @import 'fonts';
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: $background__main;
     max-width: $max__width;

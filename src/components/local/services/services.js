@@ -13,7 +13,7 @@ import * as styles from "./services.module.scss"
 
 const Services = () => {
     return (
-        <div className={styles.services}>
+        <div className={styles.services} id="services">
             <h2>Our services</h2>
 
             <div className={styles.service__wrap}>

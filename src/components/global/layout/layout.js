@@ -6,7 +6,7 @@ import * as styles from "./layout.module.scss"
 
 const Layout = ({ children }) => {
     return (
-        <div className={styles.main}>
+        <div className={styles.main} id="home">
             <Header />
             <main className={styles.main__content}>{children}</main>
             <Footer />

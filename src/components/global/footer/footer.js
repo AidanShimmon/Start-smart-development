@@ -41,9 +41,9 @@ const Footer = () => {
                         <h3>Social</h3>
                         <ul>
                             <li>
-                                <Link>
+                                <a href="https://instagram.com">
                                     <Instagram/>
-                                </Link>
+                                </a>
                             </li>
                         </ul>
                     </div>

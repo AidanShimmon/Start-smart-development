@@ -37,17 +37,15 @@ const Portfolio = () => {
         }
     `)
 
-    console.log(ImageData);
-
     return (
-        <div className={styles.portfolio}>
+        <div className={styles.portfolio} id="portfolio">
             <h2>Portfolio</h2>
 
             <div className={styles.portfolio__item}>
                 <div className={styles.portfolio__item__image}>
                     <Img 
-                        fluid={ImageData.bensBespoke.childImageSharp.fluid}
-                        alt={ImageData.bensBespoke.childImageSharp.id}
+                        fluid={ImageData.eastCoast.childImageSharp.fluid}
+                        alt={ImageData.eastCoast.childImageSharp.id}
                     />
                 </div>
 
@@ -60,8 +58,8 @@ const Portfolio = () => {
             <div className={styles.portfolio__item}>
                 <div className={styles.portfolio__item__image}>
                     <Img 
-                        fluid={ImageData.eastCoast.childImageSharp.fluid}
-                        alt={ImageData.eastCoast.childImageSharp.id}
+                        fluid={ImageData.bensBespoke.childImageSharp.fluid}
+                        alt={ImageData.bensBespoke.childImageSharp.id}
                     />
                 </div>
 
