@@ -1,0 +1,27 @@
+.portfolio {
+    @include contain--full;
+    padding: 4rem 0;
+
+    &__item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        padding: 2rem 0;
+        align-items: center;
+        grid-auto-flow: dense;
+
+        &__image {
+            filter: drop-shadow(8px 8px 20px rgba(0, 0, 0, 0.25));
+        }
+
+        &:nth-of-type(odd) {
+            .portfolio__item__text {
+                grid-column: 1;
+            }
+
+            .portfolio__item__image {
+                grid-column: 2;
+            }
+        }
+    }
+}
