@@ -84,7 +84,7 @@ const Services = () => {
                 </div>
             </div>
 
-            <div className={styles.services__outro}>
+            <div>
                 <h3>
                     Can’t find what you’re looking for?<br />
                     Don’t hesitate to get in touch!
