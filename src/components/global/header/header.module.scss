@@ -2,6 +2,12 @@
     @include contain;
     padding: 1.5rem 0;
 
+    a[href^="#home"]  {
+        @include breakpoint-down(sm) {
+            display: none;
+        }
+    }
+
     &__nav {
         display: flex;
         justify-content: space-between;
@@ -18,11 +24,19 @@
 
             + a {
                 margin-left: 2.25rem;
+
+                @include breakpoint-down(sm) {
+                    margin-left: 1rem;
+                }
             }
         }
 
         &__logo {
             display: flex;
+
+            @include breakpoint-down(xs) {
+                width: 2rem;
+            }
         }
     } 
 }

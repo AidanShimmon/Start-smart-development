@@ -2,6 +2,10 @@
     @include contain--full;
     padding: 4rem 0;
 
+    @include breakpoint-down(sm) {
+        padding: 2rem 0;
+    }
+
     &__item {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -10,8 +14,21 @@
         align-items: center;
         grid-auto-flow: dense;
 
+        @include breakpoint-down(sm) {
+            grid-template-columns: 1fr;
+            padding: 1rem;
+            background: white;
+            margin-bottom: 1rem;
+            border-radius: $border__radius;
+        }
+
         &__image {
             filter: drop-shadow(8px 8px 20px rgba(0, 0, 0, 0.25));
+
+            @include breakpoint-down(sm) {
+                grid-column: 1;
+                margin-bottom: 1rem;
+            }
         }
 
         &:nth-of-type(odd) {
@@ -21,6 +38,10 @@
 
             .portfolio__item__image {
                 grid-column: 2;
+
+                @include breakpoint-down(sm) {
+                    grid-column: 1;
+                }
             }
         }
     }

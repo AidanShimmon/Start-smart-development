@@ -5,8 +5,21 @@
     padding: 3rem 0;
     align-items: center;
 
+    @include breakpoint-down(md) {
+        padding: 2rem 0;
+        grid-template-columns: 70% 30%;
+
+        @include breakpoint-down(xs) {
+            grid-template-columns: 100%;
+        }
+    }
+
     &__text {
         padding-right: 25%;
+
+        @include breakpoint-down(md) {
+            padding-right: 10%;
+        }
 
         h3 {
             text-shadow: none;
@@ -15,6 +28,10 @@
     }
 
     &__image {
+
+        @include breakpoint-down(xs) {
+            display: none;
+        }
 
         > div {
             box-shadow: -10px 10px 4px rgba(0, 0, 0, 0.25);

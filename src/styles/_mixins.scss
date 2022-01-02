@@ -19,13 +19,16 @@
 }
 
 @mixin breakpoint-down($range) {
+    $xs: 450px;
     $sm: 540px;
     $md: 720px;
     $lg: 960px;
     $xl: 1280px;
     $xxl: 1960px;
 
-    @if $range == sm {
+    @if $range == xs {
+        @media (max-width: $xs) { @content; }
+    } @else if $range == sm {
         @media (max-width: $sm) { @content; }
     } @else if $range == md {
         @media (max-width: $md) { @content; }
