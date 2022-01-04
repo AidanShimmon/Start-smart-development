@@ -2,6 +2,11 @@
     @include contain;
     padding: 1.5rem 0;
 
+    @include breakpoint-down(xs) {
+        @include contain--full;
+        padding: 1rem;
+    }
+
     a[href^="#home"]  {
         @include breakpoint-down(sm) {
             display: none;
@@ -16,17 +21,29 @@
         padding: 0.75rem;
         border-radius: $border__radius;
 
+        @include breakpoint-down(xs) {
+            padding: 0 0.75rem;
+        }
+
         a {
             color: $font__white;
             font-size: clamp(1rem, 1.5vmax, 1.5rem);
             text-decoration: none;
             line-height: normal;
 
+            @include breakpoint-down(xs) {
+                font-size: 0.875rem;
+            }
+
             + a {
                 margin-left: 2.25rem;
 
                 @include breakpoint-down(sm) {
                     margin-left: 1rem;
+                }
+
+                @include breakpoint-down(xs) {
+                    margin-left: 0.75rem;
                 }
             }
         }

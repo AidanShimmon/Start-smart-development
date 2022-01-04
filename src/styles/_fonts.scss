@@ -14,6 +14,11 @@ h1 {
   @include breakpoint-down(lg) {
     font-size: 3rem;
   }
+
+  @include breakpoint-down(xs) {
+    font-size: 2.75rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 h2 {
@@ -27,6 +32,10 @@ h3 {
 
   @include breakpoint-down(sm) {
     margin-bottom: 1rem;
+  }
+
+  @include breakpoint-down(xs) {
+    font-size: 1rem;
   }
 
   span {
