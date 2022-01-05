@@ -19,7 +19,7 @@ const Header = () => {
                     <Link href="#services">Services</Link>
                     <Button
                         text="Get started"
-                        link="#contact"
+                        link="mailto:startsmartdev@gmail.com"
                     />
                 </div>
             </div>

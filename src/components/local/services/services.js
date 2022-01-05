@@ -89,7 +89,7 @@ const Services = () => {
                     Can’t find what you’re looking for?<br />
                     Don’t hesitate to get in touch!
                 </h3>
-                <Button text="Let's have a chat" link="#contact" />
+                <Button text="Let's have a chat" link="mailto:startsmartdev@gmail.com" />
             </div>
         </div>
     )

@@ -41,7 +41,7 @@ const Footer = () => {
                         <h3>Social</h3>
                         <ul>
                             <li>
-                                <a href="https://instagram.com">
+                                <a href="https://www.instagram.com/startsmartdevelopment/" target="_blank">
                                     <Instagram/>
                                 </a>
                             </li>
@@ -52,7 +52,7 @@ const Footer = () => {
                         <h3>Contact us</h3>
                         <Button
                             text="Let's have a chat"
-                            link="#contact"
+                            link="mailto:startsmartdev@gmail.com"
                         />
                     </div>
                 </div>
