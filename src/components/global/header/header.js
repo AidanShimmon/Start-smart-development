@@ -18,7 +18,7 @@ const Header = () => {
                     <Link href="#about">About</Link>
                     <Link href="#services">Services</Link>
                     <Button
-                        text="Get started"
+                        text="Contact us"
                         link="mailto:startsmartdev@gmail.com"
                     />
                 </div>

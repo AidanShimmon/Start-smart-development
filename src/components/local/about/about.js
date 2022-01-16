@@ -27,7 +27,10 @@ const About = () => {
                 </h2>
 
                 <h3>
-                    We focus on delivering <span>modern</span>, <span>fast</span>, <span>secure</span> and <span>effective</span> websites.
+                    We focus on delivering&nbsp;
+                    <span><span data-sal="slide-right" data-sal-delay="0"></span>modern</span>,&nbsp;<span><span data-sal="slide-right" data-sal-delay="400"></span>fast</span>,&nbsp;
+                    <span><span data-sal="slide-right" data-sal-delay="800"></span>secure</span> and&nbsp; 
+                    <span><span data-sal="slide-right" data-sal-delay="1000"></span>effective</span> websites.
                 </h3>
 
                 <p>

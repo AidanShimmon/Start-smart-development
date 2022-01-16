@@ -23,7 +23,7 @@ const Hero = () => {
             </div>
 
             <div className={styles.hero__buttons}>
-                <Button text="Get started" link="mailto:startsmartdev@gmail.com" />
+                <Button text="Contact us" link="mailto:startsmartdev@gmail.com" />
                 <Button text="Find out more" link="#about" />
             </div>
         </div>

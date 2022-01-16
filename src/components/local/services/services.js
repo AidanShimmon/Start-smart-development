@@ -18,7 +18,12 @@ const Services = () => {
 
             <div className={styles.service__wrap}>
                 <div className={styles.service}>
-                    <div className={styles.service__image}>
+                    <div
+                        data-sal="flip-right"
+                        data-sal-duration="400" 
+                        data-sal-delay="100" 
+                        className={styles.service__image}
+                    >
                         <StaticWebsitesSvg />
                     </div>
                     
@@ -29,7 +34,12 @@ const Services = () => {
                 </div>
 
                 <div className={styles.service}>
-                    <div className={styles.service__image}>
+                    <div 
+                        data-sal="flip-right"
+                        data-sal-duration="400" 
+                        data-sal-delay="200" 
+                        className={styles.service__image}
+                    >
                         <WordpressDevelopmentSvg />
                     </div>
 
@@ -40,7 +50,12 @@ const Services = () => {
                 </div>
 
                 <div className={styles.service}>
-                    <div className={styles.service__image}>
+                    <div 
+                        data-sal="flip-right"
+                        data-sal-duration="400" 
+                        data-sal-delay="300"
+                        className={styles.service__image}
+                    >
                         <ShopifyDevelopmentSvg />
                     </div>
 
@@ -51,7 +66,12 @@ const Services = () => {
                 </div>
 
                 <div className={styles.service}>
-                    <div className={styles.service__image}>
+                    <div 
+                        data-sal="flip-right"
+                        data-sal-duration="400" 
+                        data-sal-delay="400" 
+                        className={styles.service__image}
+                    >
                         <FullyResponsiveSvg />
                     </div>
 
@@ -62,7 +82,12 @@ const Services = () => {
                 </div>
 
                 <div className={styles.service}>
-                    <div className={styles.service__image}>
+                    <div 
+                        data-sal="flip-right"
+                        data-sal-duration="400" 
+                        data-sal-delay="200" 
+                        className={styles.service__image}
+                    >
                         <SeoSvg />
                     </div>
 
@@ -73,7 +98,12 @@ const Services = () => {
                 </div>
 
                 <div className={styles.service}>
-                    <div className={styles.service__image}>
+                    <div 
+                        data-sal="flip-right"
+                        data-sal-duration="400" 
+                        data-sal-delay="300"
+                        className={styles.service__image}
+                    >
                         <HandCodedSvg />
                     </div>
 

@@ -1,10 +1,14 @@
 .header {
     @include contain;
     padding: 1.5rem 0;
+    position: sticky;
+    top: -1rem;
+    z-index: 1;
 
     @include breakpoint-down(xs) {
         @include contain--full;
-        padding: 1rem;
+        padding: 0;
+        top: 0rem;
     }
 
     a[href^="#home"]  {
@@ -17,12 +21,14 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background: $brand__alt;
+        background: rgba(2, 48, 71, 0.8);
+        backdrop-filter: blur(5px);
         padding: 0.75rem;
         border-radius: $border__radius;
 
         @include breakpoint-down(xs) {
             padding: 0 0.75rem;
+            border-radius: unset;
         }
 
         a {
@@ -33,6 +39,12 @@
 
             @include breakpoint-down(xs) {
                 font-size: 0.875rem;
+            }
+
+            &:hover {
+                &:not(:last-of-type) {
+                    text-decoration: underline;
+                }
             }
 
             + a {

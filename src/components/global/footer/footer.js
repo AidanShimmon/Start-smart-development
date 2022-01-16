@@ -41,7 +41,7 @@ const Footer = () => {
                         <h3>Social</h3>
                         <ul>
                             <li>
-                                <a href="https://www.instagram.com/startsmartdevelopment/" target="_blank">
+                                <a rel="noreferrer" href="https://www.instagram.com/startsmartdevelopment/" target="_blank">
                                     <Instagram/>
                                 </a>
                             </li>

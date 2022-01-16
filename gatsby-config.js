@@ -11,6 +11,7 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-scroll-reveal`,
     {
       resolve: `gatsby-plugin-sass`,
       options: {
