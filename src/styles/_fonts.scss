@@ -29,6 +29,7 @@ h2 {
 h3 {
   font-size: clamp(1.25rem, 1.75vmax, 1.875rem);
   margin-bottom: 1.5rem;
+  line-height: 1.2;
 
   @include breakpoint-down(sm) {
     margin-bottom: 1rem;
@@ -41,6 +42,7 @@ h3 {
   span {
     position: relative;
     font-weight: 800;
+    white-space: nowrap;
 
     > span {
       display: block;
