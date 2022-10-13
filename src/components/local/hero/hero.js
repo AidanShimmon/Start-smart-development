@@ -14,7 +14,7 @@ const Hero = () => {
                         Smart<br/>
                         Development
                     </h1>
-                    <p>Beskpoke mobile friendly websites tailored to fit your requirements.</p>
+                    <p>Bespoke mobile friendly websites tailored to fit your requirements.</p>
                 </div>
 
                 <div className={styles.hero__top__img}>
