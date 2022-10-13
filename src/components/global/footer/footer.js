@@ -22,19 +22,16 @@ const Footer = () => {
                             <li>
                                 <Link href="#services">Services</Link>
                             </li>
-                            <li>
-                                <Link href="#contact">Contact us</Link>
-                            </li>
                         </ul>
                     </div>
 
                     <div className={styles.footer__content__column}>
-                        <h3>Legal</h3>
+                        {/* <h3>Legal</h3>
                         <ul>
                             <li>
                                 <Link href="terms-conditions">Terms & conditions</Link>
                             </li>
-                        </ul>
+                        </ul> */}
                     </div>
 
                     <div className={styles.footer__content__column}>
@@ -51,12 +48,11 @@ const Footer = () => {
                     <div className={styles.footer__content__column}>
                         <h3>Contact us</h3>
                         <Button
-                            text="Let's have a chat"
+                            text="Contact us"
                             link="mailto:startsmartdev@gmail.com"
                         />
                     </div>
                 </div>
-                <p>Copyright 2021 StartSmartDevelopment. All rights reserved</p>
             </div>
         </footer>
     )
